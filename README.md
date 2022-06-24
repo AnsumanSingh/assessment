@@ -22,3 +22,45 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Instalation 
+
+
+## Step 1
+
+clone repositary to your local system .
+
+
+## Step 2
+
+Create database use db.sql which is on root directory
+
+
+## Step 3
+
+Change .env file db conection seting
+
+## Step 4
+
+Open terminal move to folder then 
+run this command php -S localhost:8000 -t public 
+
+## Step 5 
+
+Get Request http://localhost:9000/api/v1/customers?page=1
+http://localhost:9000/api/v1/customer/2
+
+Post Request http://localhost:9000/api/v1/customer
+Body->row->json {"email":"test6763@gmail.com","first_name":"asxsa sdcdcd adcwe","user_image_path":"7676767676"}
+
+Put Request http://localhost:9000/api/v1/customer/111054667
+Body->row->json  {"email":"test6763@hgchg.com","first_name":"asxsa sdcdcd adcwe","user_image_path":"7676767676"}
+
+DELETE Request http://localhost:9000/api/v1/customer/1
+
+Get Request http://localhost:9000/api/v1/chat/5b727130d6db9d1be8003693/5ab6507221232f2374000aa0/hi/1
+
+
+For rauting see routes/web.php
+
+

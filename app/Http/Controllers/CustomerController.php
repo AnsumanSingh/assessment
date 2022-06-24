@@ -101,9 +101,6 @@ class CustomerController extends Controller
         $messages = array(
             'email.required' => 'email is required.'
         );
-       
-
-
 
         $validator = \Validator::make(array('email' => $customer_name), $rules, $messages);
         if(!$validator->fails()) {
